@@ -5,5 +5,15 @@
   <body>
     <h1>What is Reloaded?</h1>
     <p>Reloaded is a tool written in node.js which allows you to pipe code snippets in javascript or css directly into a running browser session without refreshing the page, or requiring any special browser plugins.</p>
+    <h1>How does it work?</h1>
+    <p>Reloaded typically gets run from the root of a big web project you are working on.  Currently it only works nicely with Rails but I am in the process of adding support for all major web frameworks, and even allowing you to configure it however you like.</p>
+    <p>Reloaded watches the project for changes to javascript and css, and automatically notifies the browser when that happens which triggers a code reload.</p>
+    <p>This happens thanks to <a href="http://www.socket.io">socket.io</a> which provides websocket like functionality across a wide range of browsers.</p>
+    <p>You are also able to instruct the browser to run code through a command line utility, which is useful for piping snippets of code or injecting assets into the browser session.</p>
+    <h1>I heard you're about to write a VIM / Textmate plugin for this</h1>
+    <p>Yes.  Yes I am.</p>
+    <p><a href="http://github.com/datapimp/Reloaded">Github Project Page</a></p>
+    <h1>How do I install it?</h1>
+    <p>If you have npm, then just 'npm install reloaded'</p>
   </body>
 </html>
