@@ -1,19 +1,53 @@
 <html>
   <head>
-    <title>Reloaded v0.1.9beta</title>
+    <title>Node Reloaded Example</title>
+    <link rel="stylesheet" href="css/application.css" media="screen" />
   </head>
-  <body>
-    <h1>What is Reloaded?</h1>
-    <p>Reloaded is a tool written in node.js which allows you to pipe code snippets in javascript or css directly into a running browser session without refreshing the page, or requiring any special browser plugins.</p>
-    <h1>How does it work?</h1>
-    <p>Reloaded typically gets run from the root of a big web project you are working on.  Currently it only works nicely with Rails but I am in the process of adding support for all major web frameworks, and even allowing you to configure it however you like.</p>
-    <p>Reloaded watches the project for changes to javascript and css, and automatically notifies the browser when that happens which triggers a code reload.</p>
-    <p>This happens thanks to <a href="http://www.socket.io">socket.io</a> which provides websocket like functionality across a wide range of browsers.</p>
-    <p>You are also able to instruct the browser to run code through a command line utility, which is useful for piping snippets of code or injecting assets into the browser session.</p>
-    <h1>I heard you're about to write a VIM / Textmate plugin for this</h1>
-    <p>Yes.  Yes I am.</p>
-    <p><a href="http://github.com/datapimp/Reloaded">Github Project Page</a></p>
-    <h1>How do I install it?</h1>
-    <p>If you have npm, then just 'npm install reloaded'</p>
+	<body>
+		<div id="header">
+			<h1>Reloaded.js</h1>
+		</div>
+    <div id="content">
+      <h2>Install the reloaded.js browser script and include it in your project.</h2>
+      <pre>
+        <code>reload install ./public/javascripts</code>
+        <code>...</code>
+        <code>&lt;script src="/javascripts/reloaded.js"&gt;&lt;/script&gt;</code>
+      </pre>
+
+      <h2>Start the server.</h2>
+      <p>change directory to the project root of, say, your rails project. or if you are working outside of rails, to the web root directory.</p>
+      <pre>
+        <code>reload start</code>
+      </pre>
+      <p>Once the server is up, you should be able to do some goofy shit</p>
+      <h2>Refresh The Browser</h2>
+      <pre>
+        <code>reload refresh</code>
+      </pre>
+      <h2>Running Javascripts by URL</h2>
+      <pre>
+        <code>reload js /javascripts/test.js</code>
+      </pre>
+      <h2>Adding CSS by URL</h2>
+      <pre>
+        <code>reload css /css/test.css</code>
+      </pre>
+			<h2>Put some JS in your pipe.</h2>
+      <pre>
+        <code>echo "alert('and smoke it');"|reload js</code>
+      </pre>
+			<h2>No one man should have all that power.</h2>
+			<p>Add some stuff to your ~/.vimrc</p>
+      <pre>
+        <code>reload vim</code>
+      </pre>
+			<p>Now you can take css / javascript directly from your buffers / registers, etc and run them in the browser.  The one caveat is that you want to have your current working directory for vim be the web root, unless you're using a framework we have set up detection for (e.g. rails ) ...</p>
+			<h2>A lot more coming soon...</h2>
+			<p>Inspecting, Debugging, you know how we do</p>
+      <a href="https://github.com/datapimp/Reloaded">Github Project</a>
+    </div>
+    <script src="javascripts/reloaded/reloaded.js"></script>
+    <script src="javascripts/application.js"></script>
   </body>
 </html>
