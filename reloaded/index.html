@@ -16,10 +16,11 @@
   </head>
 	<body>
 		<div id="header">
-			<h1 class="tk-caflisch-script-pro">Reloaded.js</h1>
+      <h1 class="tk-caflisch-script-pro">Reloaded.js</h1>
+      <p>Reloaded is an integrated development solution which gives you more control over your browser from your favorite text editor.  It is written in <a href="http://nodejs.org">node.js</a> and relies on <a href="http://socket.io">socket.io</a> to mimic the websockets protocol.  Since I am a Rails developer I use it primarily in my Rails projects but I am working on making it work seamlessly with all major web frameworks.</p>
 		</div>
 		<div id="content">
-			<h2>Install the reloaded.js browser script and include it in your project.</h2>
+			<h2>To Get Started: Install the reloaded.js browser script and include it in your project.</h2>
 			<pre name="code" class="brush: bash">reload install ./public/javascripts</pre>
 			<p>Then include it in your html</p>
 			<pre name="code" class="brush: xml">&lt;script src="/javascripts/reloaded.js"&gt;&lt;/script&gt;</pre>
@@ -28,7 +29,12 @@
 			<pre name="code" class="brush: bash"> reload start</pre>
 			<h2>No one man should have all that power.</h2>
 			<p>By adding a few lines to your ~/.vimrc with the convenience command:</p>
-			<pre name="code" class="brush: bash"> reload vim</pre>
+      <pre name="code" class="brush: bash">reload vim
+#gives you the key bindings
+&lt;Leader&gt;j !reload js  # pipes js from your buffer, selection to your browser
+&lt;Leader&gt;c !reload css # pipes css from your buffer, selection to your browser
+&lt;Leader&gt;r !reload refresh
+      </pre>
 			<p>You gain the ability to take css / javascript directly from your buffers / registers, etc and run them in the browser.  The one caveat is that you want to have your current working directory for vim be the web root, unless you're using a framework we have set up detection for (e.g. rails ) ...</p>
 			<hr/>
 			<p>Below The Surface what this is doing is running bash commands:</p>
