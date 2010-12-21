@@ -1,0 +1,15 @@
+h1 {
+  text-decoration: underline;
+	color: red;
+}
+
+pre, code {
+	margin: 0px;
+	padding: 0px;
+	background-color: #222;
+}
+
+code {
+	color: #ccc;
+	display: block;
+}
