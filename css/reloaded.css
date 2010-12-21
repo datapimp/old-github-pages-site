@@ -1,0 +1,24 @@
+* {
+	font-family: "Myriad Pro", "Verdana"
+}
+
+code, pre {
+	font-family: 'Droid Sans Mono', Courier, monospace;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+#content, #header {
+	margin: 10px auto;
+	width: 860px;
+}
+
+div.syntaxHighlighter {
+	padding: 15px; 
+}
