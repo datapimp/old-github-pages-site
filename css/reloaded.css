@@ -1,9 +1,14 @@
+body {
+  background-color: #e3e3e3;
+}
+
 code, pre {
 	font-family: 'Droid Sans Mono', Courier, monospace;
 }
 
 h1 {
   font-size: 84px;
+  color: #333;
 }
 
 h2,p,a {
@@ -12,7 +17,7 @@ h2,p,a {
 }
 
 #content, #header {
-	margin: 10px auto;
+	margin: 0px auto;
 	width: 860px;
 }
 
