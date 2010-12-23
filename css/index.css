@@ -1,0 +1,31 @@
+html {
+        background: url(/images/skyline.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#content {
+  width: 500px;
+  margin: 50px auto;
+  background-color: rgba(35, 35, 35, 0.85);
+  padding: 25px;
+  color: #eee;
+}
+
+a, h2, p {
+  font-family: "myriad-pro-1", "myriad-pro-2", sans-serif;
+  color: #eee;
+}
+
+.shadow {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+}
+
